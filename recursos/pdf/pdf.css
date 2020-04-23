@@ -1,0 +1,29 @@
+.img1{
+    float: left;
+    width:200px;
+    height:100px;
+}
+.linea1{
+    position: absolute;
+}
+.p1{
+    text-align: right;
+    /*position: absolute; top: 15;  right: 0;*/
+}
+.p2{
+    text-align: center;
+}
+.folio{
+    text-align: right;
+}
+.fDr{
+    position: absolute; left: 5;
+
+}
+.fIzq{
+    position: absolute; right: 35;
+}
+.pie{
+    text-align: center;
+    font-size: 75%;
+}

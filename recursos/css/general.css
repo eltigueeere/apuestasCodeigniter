@@ -1,0 +1,15 @@
+.btn-imprime{
+    float: right;
+}
+.wisinYandel{
+  height: 10px;
+  background-color: rgba(212, 106, 44, 0.527);
+}
+.inputWY{
+  background-color:  rgba(97, 229, 247, 0.863);
+  width: 50px;
+  border-radius: 5px;
+}
+.centro{
+  text-align: center;
+}
