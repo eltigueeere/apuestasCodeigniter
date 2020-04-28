@@ -11,34 +11,19 @@ class Home extends CI_Controller {
 		$this->load->view("inicio/index");
 	}
 
-	public function apuestas()
-	{
-		$this->load->view("inicio/apuestas");
-	}
-
 	public function galeria()
 	{
-		$this->load->view("inicio/galeria");
-	}
-	
-	public function mision()
-	{
-		$this->load->view("inicio/mision");
+		$this->load->view('inicio/galeria');
 	}
 
-	
-	public function vision()
+	public function nuestrosPrecios()
 	{
-		$this->load->view("inicio/vision");
+		$this->load->view('inicio/nuestrosPrecios');
 	}
 
-	public function nuestrasValores()
+	public function nosotros()
 	{
-		$this->load->view("inicio/nuestrasValores");
+		$this->load->view('inicio/nosotros');
 	}
-	
-	public function contacto()
-	{
-		$this->load->view("inicio/contacto");
-	}
+
 }

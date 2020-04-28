@@ -37,7 +37,7 @@ class Auth extends CI_Controller {
 				'login' => TRUE
 			);
 			$this->session->set_userdata($data);
-			redirect(base_url());
+			redirect(base_url('Auth/inicio'));
 		}
 	}
 
@@ -45,4 +45,18 @@ class Auth extends CI_Controller {
 		$this->session->sess_destroy();
 		redirect(base_url());
 	}
+
+	/*
+	*/
+	public function crearCuenta()
+	{
+		$this->load->view('inicio/crearCuenta');
+	}
+
+
+	public function validarCuenta()
+	{
+		$this->load->view('inicio/validarCuenta');
+	}
+
 }

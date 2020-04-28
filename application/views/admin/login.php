@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Sistema Integral Nombre</title>
+	<title>Iniciar sesión F2F</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -38,7 +38,7 @@
 					</div>-->
 						
 					<span class="login100-form-title p-t-20 p-b-45">
-						Plataforma de Inversion <br> Naucalpan Emprende 2019
+						Face 2 Face  <br> Videos Apuesta de Gallos
 					</span>
 
 					<div class="wrap-input100 m-b-10">
@@ -71,7 +71,7 @@
 
 					<div class="text-center w-full">
 						<a class="txt1" href="#">
-							© Hidalgo Tel: (55) 8476--2255
+							© CDMX Tel: (55) XXXX--XXXX
 									
 						</a>
 					</div>
