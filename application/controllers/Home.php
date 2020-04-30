@@ -8,7 +8,16 @@ class Home extends CI_Controller {
 
     public function index()
 	{
-		$this->load->view("inicio/index");
+		$entorno="";
+		require_once ("Mobile_Detect.php");
+		$detect = new Mobile_Detect();
+		if ($detect->isMobile()==false) {
+			$entorno="navbarEscritorio";
+			$this->load->view('inicio/index', compact("entorno"));
+			} else{
+				$entorno="navbarMovil";
+				$this->load->view('inicio/index', compact("entorno"));
+			}		
 	}
 
 	public function galeria()
@@ -23,7 +32,16 @@ class Home extends CI_Controller {
 
 	public function nosotros()
 	{
-		$this->load->view('inicio/nosotros');
+		$entorno="";
+		require_once ("Mobile_Detect.php");
+		$detect = new Mobile_Detect();
+		if ($detect->isMobile()==false) {
+			$entorno="navbarEscritorio";
+			$this->load->view('inicio/nosotros', compact("entorno"));
+			} else{
+				$entorno="navbarMovil";
+				$this->load->view('inicio/nosotros', compact("entorno"));
+			}
 	}
 
 }

@@ -11,8 +11,8 @@
                 <nav class="b-bottom-nav f-bottom-nav b-right hidden-xs">
                     <ul>
                         <li><a href="<?php echo base_url(); ?>">Inicio</a></li>
-                        <li class="is-active-bottom-nav"><a href="<?php echo base_url('/Home/galeria'); ?>">Galeria</a></li>
-                        <li><a href="<?php echo base_url('/Home/nuestrosPrecios'); ?>">Nuestros precios</a></li>
+                        <!--<li class="is-active-bottom-nav"><a href="<?php echo base_url('/Home/galeria'); ?>">Galeria</a></li>
+                        <li><a href="<?php echo base_url('/Home/nuestrosPrecios'); ?>">Nuestros precios</a></li>-->
                         <li><a href="<?php echo base_url('/Home/nosotros'); ?>">Nosotros</a></li>
                         <!--<li><a href="../../html/page_search_result.html">Pages</a></li>
                         <li><a href="../../html/shortcode_typography.html">Shortcode</a></li>
@@ -222,6 +222,5 @@
 <script src="<?php echo base_url('recursos/front1/'); ?>js/loader.js"></script>
 <script src="<?php echo base_url('recursos/front1/'); ?>js/scrollIt/scrollIt.min.js"></script>
 <script src="<?php echo base_url('recursos/front1/'); ?>js/modules/navigation-slide.js"></script>
-
 </body>
 </html>
