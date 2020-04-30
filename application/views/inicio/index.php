@@ -83,7 +83,7 @@
         </div>
     </div>
 </div>
-            <h4 class="f-primary-b">John Doe</h4>
+            <h4 class="f-primary-b">Gallo 1 VS Gallo 2</h4>
             <div class="b-employee-item__position f-employee-item__position">ceo and founder</div>
             <p>Consetetur sadipscing elitrd diam nonumy eirmod tempor invidunt ut labore.</p>
             <div class="b-employee-item__social">
@@ -105,7 +105,7 @@
         </div>
     </div>
 </div>
-            <h4 class="f-primary-b">Andrew Clark</h4>
+            <h4 class="f-primary-b">Gallo 1 VS Gallo 2</h4>
             <div class="b-employee-item__position f-employee-item__position">front-end developer</div>
             <p>Consetetur sadipscing elitrd diam nonumy eirmod tempor invidunt ut labore.</p>
             <div class="b-employee-item__social">
@@ -127,7 +127,7 @@
         </div>
     </div>
 </div>
-            <h4 class="f-primary-b">Patrick evra</h4>
+            <h4 class="f-primary-b">Gallo 1 VS Gallo 2</h4>
             <div class="b-employee-item__position f-employee-item__position">back-end developer</div>
             <p>Consetetur sadipscing elitrd diam nonumy eirmod tempor invidunt ut labore.</p>
             <div class="b-employee-item__social">
@@ -149,7 +149,7 @@
         </div>
     </div>
 </div>
-            <h4 class="f-primary-b">Scott paker</h4>
+            <h4 class="f-primary-b">Gallo 1 VS Gallo 2</h4>
             <div class="b-employee-item__position f-employee-item__position">project manager</div>
             <p>Consetetur sadipscing elitrd diam nonumy eirmod tempor invidunt ut labore.</p>
             <div class="b-employee-item__social">
