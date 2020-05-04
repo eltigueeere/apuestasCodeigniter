@@ -1,50 +1,16 @@
+
 <?php 
     $this->load->view('layout/general/headerHTML');
+    $this->load->view('layout/general/navbarMovil'); 
 ?>
-
-<div>
-    <?php $this->load->view('layout/general/'.$entorno); ?>
-</div>
   <div class="l-main-container">
 
   <div class="b-slidercontainer b-slider b-slider--thumb">
       <div class="j-fullscreenslider j-arr-nexttobullets">
           <ul>
-              <li data-transition="" data-slotamount="12" >
+          <li data-transition="slotfade-vertical" data-slotamount="7" >
                   <div class="tp-bannertimer"></div>
-                  <img data-retina src="<?php echo base_url('recursos/front1/'); ?>img/slider/section-bg-2.jpg">
-                  <div class="caption lft caption-left"  data-x="left" data-y="150" data-hoffset="60" data-speed="700" data-start="2000">
-                      <div class="b-slider-lg-info-l__item-title f-slider-lg-info-l__item-title b-slider-lg-info-l__item-title-tertiary">
-                          <h2 class="f-primary-l">Feria de 1</h2>
-                          <h1 class="f-primary-b">Gallo A VS Gallo B1</h1>
-                      </div>
-                  </div>
-                  <div class="caption lfl caption-left"  data-x="left" data-y="270" data-speed="1000" data-start="2600">
-                      <div class="b-slider-lg-info-l__item-link f-slider-lg-info-l__item-link">
-                          <a href="#" class="b-slider-lg-info-l__item-anchor f-slider-lg-info-l__item-anchor f-primary-b">Ver video</a>
-                          <span class="b-slider-lg-info-l__item-link-after"><i class="fa fa-chevron-right"></i></span>
-                      </div>
-                  </div>
-              </li>
-              <li data-transition="3dcurtain-vertical" data-slotamount="7" >
-                  <div class="tp-bannertimer"></div>
-                  <img data-retina src="<?php echo base_url('recursos/front1/'); ?>img/slider/section-bg-4.jpg">
-                  <div class="caption lft caption-left"  data-x="left" data-y="150" data-hoffset="60" data-speed="700" data-start="2000">
-                      <div class="b-slider-lg-info-l__item-title f-slider-lg-info-l__item-title b-slider-lg-info-l__item-title-tertiary b-bg-slider-lg-info-l__item-title">
-                          <h2 class="f-primary-l">Feria de  2</h2>
-                          <h1 class="f-primary-b">Gallo A VS Gallo B 2</h1>
-                      </div>
-                  </div>
-                  <div class="caption lfl caption-left"  data-x="left" data-y="270" data-speed="1000" data-start="2600">
-                      <div class="b-slider-lg-info-l__item-link f-slider-lg-info-l__item-link">
-                          <a href="#" class="b-slider-lg-info-l__item-anchor f-slider-lg-info-l__item-anchor f-primary-b">Ver video 2</a>
-                          <span class="b-slider-lg-info-l__item-link-after"><i class="fa fa-chevron-right"></i></span>
-                      </div>
-                  </div>
-              </li>
-              <li data-transition="slotfade-vertical" data-slotamount="7" >
-                  <div class="tp-bannertimer"></div>
-                  <img data-retina src="<?php echo base_url('recursos/front1/'); ?>img/slider/slider-education.jpg">
+                  <img data-retina src="<?php echo base_url('recursos/img/'); ?>front1/f1.png">
                   <div class="caption lft caption-left"  data-x="left" data-y="150" data-hoffset="60" data-speed="700" data-start="2000">
                       <div class="b-slider-lg-info-l__item-title f-slider-lg-info-l__item-title b-slider-lg-info-l__item-title-tertiary b-bg-slider-lg-info-l__item-title">
                           <h2 class="f-primary-l">Feria de  3 </h2>
@@ -53,7 +19,39 @@
                   </div>
                   <div class="caption lfl caption-left"  data-x="left" data-y="270" data-speed="1000" data-start="2600">
                       <div class="b-slider-lg-info-l__item-link f-slider-lg-info-l__item-link">
-                          <a href="#" class="b-slider-lg-info-l__item-anchor f-slider-lg-info-l__item-anchor f-primary-b">Ver video 3</a>
+                          <a href="#" class="b-slider-lg-info-l__item-anchor f-slider-lg-info-l__item-anchor f-primary-b">Ver video en vivo</a>
+                          <span class="b-slider-lg-info-l__item-link-after"><i class="fa fa-chevron-right"></i></span>
+                      </div>
+                  </div>
+              </li>
+              <li data-transition="3dcurtain-vertical" data-slotamount="7" >
+                  <div class="tp-bannertimer"></div>
+                  <img data-retina src="<?php echo base_url('recursos/img/'); ?>front1/f2.png">
+                  <div class="caption lft caption-left"  data-x="left" data-y="150" data-hoffset="60" data-speed="700" data-start="2000">
+                      <div class="b-slider-lg-info-l__item-title f-slider-lg-info-l__item-title b-slider-lg-info-l__item-title-tertiary b-bg-slider-lg-info-l__item-title">
+                          <h2 class="f-primary-l">Feria de  2</h2>
+                          <h1 class="f-primary-b">Gallo A VS Gallo B 2</h1>
+                      </div>
+                  </div>
+                  <div class="caption lfl caption-left"  data-x="left" data-y="270" data-speed="1000" data-start="2600">
+                      <div class="b-slider-lg-info-l__item-link f-slider-lg-info-l__item-link">
+                          <a href="#" class="b-slider-lg-info-l__item-anchor f-slider-lg-info-l__item-anchor f-primary-b">Ver video en vivo</a>
+                          <span class="b-slider-lg-info-l__item-link-after"><i class="fa fa-chevron-right"></i></span>
+                      </div>
+                  </div>
+              </li>
+              <li data-transition="slotfade-vertical" data-slotamount="7" >
+                  <div class="tp-bannertimer"></div>
+                  <img data-retina src="<?php echo base_url('recursos/img/'); ?>front1/f1.png">
+                  <div class="caption lft caption-left"  data-x="left" data-y="150" data-hoffset="60" data-speed="700" data-start="2000">
+                      <div class="b-slider-lg-info-l__item-title f-slider-lg-info-l__item-title b-slider-lg-info-l__item-title-tertiary b-bg-slider-lg-info-l__item-title">
+                          <h2 class="f-primary-l">Feria de  3 </h2>
+                          <h1 class="f-primary-b">Titulo1 img 3</h1>
+                      </div>
+                  </div>
+                  <div class="caption lfl caption-left"  data-x="left" data-y="270" data-speed="1000" data-start="2600">
+                      <div class="b-slider-lg-info-l__item-link f-slider-lg-info-l__item-link">
+                          <a href="#" class="b-slider-lg-info-l__item-anchor f-slider-lg-info-l__item-anchor f-primary-b">Ver video en vivo</a>
                           <span class="b-slider-lg-info-l__item-link-after"><i class="fa fa-chevron-right"></i></span>
                       </div>
                   </div>
@@ -74,7 +72,7 @@
     <div class="col-md-3 col-sm-4 col-xs-12">
         <div class="b-employee-item b-employee-item--color f-employee-item">
             <div class=" view view-sixth">
-    <a href="#"><img class="j-data-element" data-animate="fadeInDown" data-retina src="<?php echo base_url(); ?>recursos/front1/img/users/user1.jpg" alt=""/></a>
+    <a href="#"><img class="j-data-element" data-animate="fadeInDown" data-retina src="<?php echo base_url('recursos/img/'); ?>front1/Boton-Tepic-20_thumb_ib4g4oia.png"></a>
     <div class="b-item-hover-action f-center mask">
         <div class="b-item-hover-action__inner">
             <div class="b-item-hover-action__inner-btn_group">
@@ -83,20 +81,19 @@
         </div>
     </div>
 </div>
-            <h4 class="f-primary-b">Gallo 1 VS Gallo 2</h4>
-            <div class="b-employee-item__position f-employee-item__position">ceo and founder</div>
-            <p>Consetetur sadipscing elitrd diam nonumy eirmod tempor invidunt ut labore.</p>
+            <h4 class="f-primary-b">Feria de Nayarit</h4>
+            <div class="b-employee-item__position f-employee-item__position">Apuestas - videos en vivo</div>
+            <p>Descripcion de los eventos.</p>
             <div class="b-employee-item__social">
-                <a href="#" class="b-employee-item__social_btn"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="b-employee-item__social_btn"><i class="fa fa-google-plus"></i></a>
-                <a href="#" class="b-employee-item__social_btn"><i class="fa fa-thumbs-up"></i></a>
+                <a href="#" class="b-employee-item__social_btn"><i class="fa fa-play"></i></a>
+                <a href="#" class="b-employee-item__social_btn"><i class="fa fa-money fa-lg"></i></a>
             </div>
         </div>
     </div>
     <div class="col-md-3 col-sm-4 col-xs-12">
         <div class="b-employee-item b-employee-item--color f-employee-item">
             <div class=" view view-sixth">
-    <a href="#"><img class="j-data-element" data-animate="fadeInDown" data-retina src="<?php echo base_url(); ?>recursos/front1/img/users/user2.jpg" alt=""/></a>
+    <a href="#"><img class="j-data-element" data-animate="fadeInDown" data-retina src="<?php echo base_url('recursos/img/'); ?>front1/Boton-Mega-Feb-2020_thumb.png"></a>
     <div class="b-item-hover-action f-center mask">
         <div class="b-item-hover-action__inner">
             <div class="b-item-hover-action__inner-btn_group">
@@ -105,20 +102,19 @@
         </div>
     </div>
 </div>
-            <h4 class="f-primary-b">Gallo 1 VS Gallo 2</h4>
-            <div class="b-employee-item__position f-employee-item__position">front-end developer</div>
-            <p>Consetetur sadipscing elitrd diam nonumy eirmod tempor invidunt ut labore.</p>
+            <h4 class="f-primary-b">Feria de Guadalajara  </h4>
+            <div class="b-employee-item__position f-employee-item__position">Apuestas - videos en vivo</div>
+            <p>Descripcion de los eventos.</p>
             <div class="b-employee-item__social">
-                <a href="#" class="b-employee-item__social_btn"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="b-employee-item__social_btn"><i class="fa fa-google-plus"></i></a>
-                <a href="#" class="b-employee-item__social_btn"><i class="fa fa-thumbs-up"></i></a>
+                <a href="#" class="b-employee-item__social_btn"><i class="fa fa-play"></i></a>
+                <a href="#" class="b-employee-item__social_btn"><i class="fa fa-money fa-lg"></i></a>
             </div>
         </div>
     </div>
     <div class="col-md-3 col-sm-4 col-xs-12">
         <div class="b-employee-item b-employee-item--color f-employee-item">
             <div class=" view view-sixth">
-    <a href="#"><img class="j-data-element" data-animate="fadeInDown" data-retina src="<?php echo base_url(); ?>recursos/front1/img/users/user3.jpg" alt=""/></a>
+    <a href="#"><img class="j-data-element" data-animate="fadeInDown" data-retina src="<?php echo base_url('recursos/img/'); ?>front1/TJalos.png"></a>
     <div class="b-item-hover-action f-center mask">
         <div class="b-item-hover-action__inner">
             <div class="b-item-hover-action__inner-btn_group">
@@ -127,20 +123,19 @@
         </div>
     </div>
 </div>
-            <h4 class="f-primary-b">Gallo 1 VS Gallo 2</h4>
-            <div class="b-employee-item__position f-employee-item__position">back-end developer</div>
-            <p>Consetetur sadipscing elitrd diam nonumy eirmod tempor invidunt ut labore.</p>
+            <h4 class="f-primary-b">Feria de JALOS </h4>
+            <div class="b-employee-item__position f-employee-item__position">Apuestas - videos en vivo</div>
+            <p>Descripcion de los eventos.</p>
             <div class="b-employee-item__social">
-                <a href="#" class="b-employee-item__social_btn"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="b-employee-item__social_btn"><i class="fa fa-google-plus"></i></a>
-                <a href="#" class="b-employee-item__social_btn"><i class="fa fa-thumbs-up"></i></a>
+                <a href="#" class="b-employee-item__social_btn"><i class="fa fa-play"></i></a>
+                <a href="#" class="b-employee-item__social_btn"><i class="fa fa-money fa-lg"></i></a>
             </div>
         </div>
     </div>
     <div class="col-md-3 col-sm-4 col-xs-12 hidden-xs hidden-sm">
         <div class="b-employee-item b-employee-item--color f-employee-item">
             <div class=" view view-sixth">
-    <a href="#"><img class="j-data-element" data-animate="fadeInDown" data-retina src="<?php echo base_url(); ?>recursos/front1/img/users/user4.jpg" alt=""/></a>
+    <a href="#"><img class="j-data-element" data-animate="fadeInDown" data-retina src="<?php echo base_url('recursos/img/'); ?>front1/Boton-Mega-Feb-2020_thumb.png"></a>
     <div class="b-item-hover-action f-center mask">
         <div class="b-item-hover-action__inner">
             <div class="b-item-hover-action__inner-btn_group">
@@ -149,19 +144,134 @@
         </div>
     </div>
 </div>
-            <h4 class="f-primary-b">Gallo 1 VS Gallo 2</h4>
-            <div class="b-employee-item__position f-employee-item__position">project manager</div>
-            <p>Consetetur sadipscing elitrd diam nonumy eirmod tempor invidunt ut labore.</p>
+            <h4 class="f-primary-b">Feria de Guadalajara </h4>
+            <div class="b-employee-item__position f-employee-item__position">Apuestas - videos en vivo</div>
+            <p>Descripcion de los eventos.</p>
             <div class="b-employee-item__social">
-                <a href="#" class="b-employee-item__social_btn"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="b-employee-item__social_btn"><i class="fa fa-google-plus"></i></a>
-                <a href="#" class="b-employee-item__social_btn"><i class="fa fa-thumbs-up"></i></a>
+                <a href="#" class="b-employee-item__social_btn"><i class="fa fa-play"></i></a>
+                <a href="#" class="b-employee-item__social_btn"><i class="fa fa-money fa-lg"></i></a>
             </div>
         </div>
     </div>
 </div>
 
 </div>
+
+<section>
+        <fieldset class="scheduler-border">
+            <legend class="scheduler-border heading-hr text-primary"> Crear una cuenta nueva. </legend>
+            <div class="row">
+                <div class="col-sm-12 col-md-4" >
+                    <label for="nombreUsuario" class="letrasNavEscritorioRed" placeholder="Nombre" >Nombre
+                    </label><br>
+                    <input type="text" class="form-control" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre">
+                </div>
+                <div class="col-sm-12 col-md-4" >
+                    <label for="apellidoUsuario" class="letrasNavEscritorioRed">Apellido
+                    </label><br>
+                    <input type="text" class="form-control" name="apellidoUsuario" id="apellidoUsuario" placeholder="Apellido" >
+                </div>
+                <div class="col-sm-12 col-md-4" >
+                    <label for="nombreUsuario" class="letrasNavEscritorioRed">Nombre Usuario
+                    </label><br>
+                    <input type="text" class="form-control" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre Usuario" >
+                </div>
+            </div> <br>
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <label class="letrasNavEscritorioRed" for="contraseña1">Contraseña</label>
+                    <input class="form-control" type="password" name="contraseña1" id="contraseña1" placeholder="Contraseña">
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <label class="letrasNavEscritorioRed" for="contraseña2">Confirma Contraseña</label>
+                    <input class="form-control" type="password" name="contraseña2" id="contraseña2" placeholder="Confirma Contraseña" >
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <label class="letrasNavEscritorioRed" for="paso1/2">Paso1/2</label> <br>
+                    <button class="btn btn-primary btn-lg" type="submit">Crear Usuario</button>
+                </div>
+            </div> 
+        </fieldset>
+    </section>
+    
+<section>
+    <fieldset class="scheduler-border">
+        <legend class="scheduler-border heading-hr text-primary"> Como hacer los pagos y cobrar ganancias</legend>
+        
+        <div class="col-md-12 col-sm-12 col-xs-12 ">
+        <h4 class="f-primary-b">Ve las instruciones</h4>
+          <div class="b-short-photo-items-group">
+    <div class="b-column">
+        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_1.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_1.jpg" alt=""/></a>
+    </div>
+    <div class="b-column">
+        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_2.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_2.jpg" alt=""/></a>
+    </div>
+    <div class="b-column">
+        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_3.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_3.jpg" alt=""/></a>
+    </div>
+    <div class="b-column">
+        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_4.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_4.jpg" alt=""/></a>
+    </div>
+    <div class="b-column">
+        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_5.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_5.jpg" alt=""/></a>
+    </div>
+    <div class="b-column">
+        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_6.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_6.jpg" alt=""/></a>
+    </div>
+    <div class="b-column">
+        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_7.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_7.jpg" alt=""/></a>
+    </div>
+    <div class="b-column">
+        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_8.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_8.jpg" alt=""/></a>
+    </div>
+    <div class="b-column hidden-xs">
+        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_9.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_9.jpg" alt=""/></a>
+    </div>
+    <div class="b-column hidden-sm hidden-xs">
+        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_10.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_10.jpg" alt=""/></a>
+    </div>
+    <div class="b-column hidden-sm hidden-xs">
+        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_11.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_11.jpg" alt=""/></a>
+    </div>
+    <div class="b-column hidden-sm hidden-xs">
+        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_12.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_12.jpg" alt=""/></a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </fieldset>
+</section>
+
+
 
 </section>
 

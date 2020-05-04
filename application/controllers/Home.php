@@ -20,14 +20,14 @@ class Home extends CI_Controller {
 			}		
 	}
 
-	public function galeria()
+	public function eventosFuturos()
 	{
-		$this->load->view('inicio/galeria');
+		$this->load->view('inicio/eventosFuturos');
 	}
 
-	public function nuestrosPrecios()
+	public function comoApostar()
 	{
-		$this->load->view('inicio/nuestrosPrecios');
+		$this->load->view('inicio/comoApostar');
 	}
 
 	public function nosotros()
@@ -44,4 +44,11 @@ class Home extends CI_Controller {
 			}
 	}
 
+	public function crearUsuario(){
+		$this->load->view('inicio/crearUsuario');
+	}
+
+	public function crearUsuarioDetalles(){
+		$this->load->view('inicio/crearUsuarioDetalles');
+	}
 }

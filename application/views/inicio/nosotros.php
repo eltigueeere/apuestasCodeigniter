@@ -1,22 +1,12 @@
+
 <?php 
     $this->load->view('layout/general/headerHTML');
+    $this->load->view('layout/general/navbarMovil'); 
 ?>
-
-<div>
-    <?php $this->load->view('layout/general/'.$entorno); ?>
-</div>
-
-<div class="b-inner-page-header f-inner-page-header b-bg-header-inner-page">
-  <div class="b-inner-page-header__content">
-    <div class="container">
-      <h1 class="f-primary-l c-default">Nosotros</h1>
-    </div>
-  </div>
-</div>
 <div class="l-main-container">
 
 <div class="b-breadcrumbs f-breadcrumbs">
-    <div class="container">
+    <div class="container ">
         <ul>
             <li><a href="<?php echo base_url(); ?>"><i class="fa fa-home"></i>Inicio</a></li>
             <li><i class="fa fa-angle-right"></i><a href="#">Nosotros</a></li>

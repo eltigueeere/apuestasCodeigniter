@@ -1,25 +1,60 @@
 
-
 <header>
-    <div class="container b-header__box b-relative">
-    <nav class="navbar navbar-default" role="navigation">
-    <div class="navbar">
-        <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-            <form>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Usuario">  
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
-            </form>
-            </div>
-            <div class="col-sm-12"> <br>
-            <input class="btn btn-block btn-primary" type="submit" value="Entrar">
-            </div>
-            <div class="col-sm-12"><br>
-            <button type="button" class="btn btn-block btn-success lalo">Crear Cuenta</button>
-            </div>
-        </div>
-        </div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand " href="<?php echo base_url(); ?>"><span class="letrasNavEscritorioRed" >F2F</span></a>
     </div>
-    </nav>
-    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="<?php echo base_url('Home/crearUsuario'); ?>"><span class="letrasNavEscritorioRed" >CREA UNA CUENTA</span><span class="sr-only">(current)</span></a></li>
+        <li><a href="<?php echo base_url('Home/nosotros'); ?>"><span class="letrasNavEscritorioRed" >Sobre Nosotros</span></a></li>
+        <li><a href="<?php echo base_url('Home/eventosFuturos'); ?>"><span class="letrasNavEscritorioRed" >Eventos Futuros</span> </a></li>
+        <li><a href="<?php echo base_url('Home/nosotros'); ?>"><span class="letrasNavEscritorioRed" >Estadísticas</span></a></li>
+        <li><a href="<?php echo base_url('Home/comoApostar'); ?>"><span class="letrasNavEscritorioRed" >Como Apostar</span></a></li>
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>-->
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Usuario">
+          <input type="text" class="form-control" placeholder="Contraseña">
+        </div>
+        <button type="submit" class="btn btn-default btn-primary">Entrar</button>
+      </form>
+      <!--<ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>-->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</header>

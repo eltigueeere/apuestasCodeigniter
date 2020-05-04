@@ -12749,7 +12749,39 @@ textarea.b-product-card-textarea {
 .is-hidden {
   display: none; }
 
+.navEscritorio{
+    background-color: red;
+    border-radius: 10px;
+  }
+.letrasNavEscritorio{
+  color: white;
+  margin-top: 13;
+  font-size: 14px;
+}
+.letrasNavEscritorioRed{
+  color: red;
+}
+
+fieldset.scheduler-border {
+  border: 1px groove #ddd !important;
+  padding: 0 1.4em 1.4em 1.4em !important;
+  margin: 0 0 1.5em 0 !important;
+  -webkit-box-shadow:  0px 0px 0px 0px #000;
+          box-shadow:  0px 0px 0px 0px #000;
+         
+
+}
+
+.center1{
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+legend.scheduler-border {
+  font-size: 1.2em !important;
+  font-weight: bold !important;
+  text-align: left !important;
+  color: red;
+}
 .is-visible {
   display: block;
   visibility: visible; }
-
