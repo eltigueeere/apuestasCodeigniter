@@ -34,13 +34,16 @@
           </ul>
         </li>-->
       </ul>
-      <form class="navbar-form navbar-right">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Usuario">
-          <input type="text" class="form-control" placeholder="Contraseña">
-        </div>
-        <button type="submit" class="btn btn-default btn-primary">Entrar</button>
-      </form>
+      <form action="<?php echo base_url('auth/login');?>" method="post" class="navbar-form navbar-right">
+					<div class="wrap-input100 validate-input m-b-10" data-validate = "Usuario Requerido">
+						<input class="form-control" type="text" name="username" placeholder="Usuario">
+            <input class="form-control" type="password" name="password" placeholder="Contraseña">
+            <button class="btn btn-default btn-primary">Iniciar Sesión</button>
+					</div>
+          <div class="wrap-input100 m-b-10">
+						<?php echo muestra_mensaje_flash($this->session->flashdata('mensaje'));?>
+					</div>
+				</form>
       <!--<ul class="nav navbar-nav navbar-right">
         <li><a href="#">Link</a></li>
         <li class="dropdown">
