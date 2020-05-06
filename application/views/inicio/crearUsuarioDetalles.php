@@ -10,12 +10,17 @@
             <legend class="scheduler-border heading-hr text-primary"> Crear una cuenta nueva. </legend>
             <form action="<?php echo base_url('nU/newUser/newUserA'); ?>" method="post">
                 <div class="row">
-                    <div class="col-sm-6 col-md-6" >
+                    <div class="col-sm-6 col-md-3" >
                         <label for="numeroTelefono" class="letrasNavEscritorioRed" >Número de Telefono
                         </label><br>
                         <input type="text" class="form-control" name="numeroTelefono" id="numeroTelefono" placeholder="Número de Telefono">
                     </div>
-                    <!--<div class="col-sm-6 col-md-6" >
+                    <div class="col-sm-6 col-md-3" >
+                        <label for="correo" class="letrasNavEscritorioRed" >Correo
+                        </label><br>
+                        <input type="text" class="form-control" name="correo" id="correo" placeholder="Número de Telefono">
+                    </div>
+                    <div class="col-sm-6 col-md-6" >
                         <label for="genero" class="letrasNavEscritorioRed" >Genero
                         </label><br>
                         <select class="form-control" name="genero" id="exampleFormControlSelect1">
@@ -56,7 +61,7 @@
                             <option vlaue="2">1902</option>
                             <option vlaue="3">1903</option>
                         </select>
-                    </div>-->
+                    </div>
                     <div class="col-sm-12 col-md-6">
                         <label for="crearUsuario" class="letrasNavEscritorioRed" >Guardar usuario</label> <br>
                         <button class="btn btn-primary btn-lg" type="submit">Confirmar usuario</button>

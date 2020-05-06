@@ -8,20 +8,20 @@
   <div class="b-slidercontainer b-slider b-slider--thumb">
       <div class="j-fullscreenslider j-arr-nexttobullets">
           <ul>
-          <li data-transition="slotfade-vertical" data-slotamount="7" >
+          <li data-transition="" data-slotamount="10" >
                   <div class="tp-bannertimer"></div>
-                  <img data-retina src="<?php echo base_url('recursos/img/'); ?>front1/f1.png">
+                  <img data-retina src="<?php echo base_url('recursos/img/'); ?>front1/f1.jpg">
                   <div class="caption lft caption-left"  data-x="left" data-y="150" data-hoffset="60" data-speed="700" data-start="2000">
                       <div class="b-slider-lg-info-l__item-title f-slider-lg-info-l__item-title b-slider-lg-info-l__item-title-tertiary b-bg-slider-lg-info-l__item-title">
-                          <h2 class="f-primary-l">Feria de  3 </h2>
-                          <h1 class="f-primary-b">Titulo1 img 3</h1>
+                          <h2 class="f-primary-l">Apuestas en linea</h2>
+                          <h1 class="f-primary-b">Peleas de Gallos</h1>
                       </div>
                   </div>
                   <div class="caption lfl caption-left"  data-x="left" data-y="270" data-speed="1000" data-start="2600">
-                      <div class="b-slider-lg-info-l__item-link f-slider-lg-info-l__item-link">
+                      <!--<div class="b-slider-lg-info-l__item-link f-slider-lg-info-l__item-link">
                           <a href="#" class="b-slider-lg-info-l__item-anchor f-slider-lg-info-l__item-anchor f-primary-b">Ver video en vivo</a>
                           <span class="b-slider-lg-info-l__item-link-after"><i class="fa fa-chevron-right"></i></span>
-                      </div>
+                      </div>-->
                   </div>
               </li>
               <li data-transition="3dcurtain-vertical" data-slotamount="7" >
@@ -158,123 +158,91 @@
 </div>
 
 <section>
-        <fieldset class="scheduler-border">
-            <legend class="scheduler-border heading-hr text-primary"> Crear una cuenta nueva. </legend>
-            <form action="nU/newUser/newUserA" method="post">
-                <div class="row">
-                    <div class="col-sm-12 col-md-4" >
-                        <label for="nombreUsuario" class="letrasNavEscritorioRed" placeholder="Nombre" >Nombre
-                        </label><br>
-                        <input type="text" class="form-control" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre">
-                    </div>
-                    <div class="col-sm-12 col-md-4" >
-                        <label for="apellidoUsuario" class="letrasNavEscritorioRed">Apellido
-                        </label><br>
-                        <input type="text" class="form-control" name="apellidoUsuario" id="apellidoUsuario" placeholder="Apellido" >
-                    </div>
-                    <div class="col-sm-12 col-md-4" >
-                        <label for="nombreUsuarioAka" class="letrasNavEscritorioRed">Nombre Usuario
-                        </label><br>
-                        <input type="text" class="form-control" name="nombreUsuarioAka" id="nombreUsuarioAka" placeholder="Nombre Usuario" >
-                    </div>
-                </div> <br>
-                <div class="row">
-                    <div class="col-sm-12 col-md-4">
-                        <label class="letrasNavEscritorioRed" for="contrasena1">Contraseña</label>
-                        <input class="form-control" type="password" name="contrasena1" id="contrasena1" placeholder="Contraseña">
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <label class="letrasNavEscritorioRed" for="contrasena2">Confirma Contraseña</label>
-                        <input class="form-control" type="password" name="contrasena2" id="contrasena2" placeholder="Confirma Contraseña" >
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <label class="letrasNavEscritorioRed" for="paso1/2">Paso1/2</label> <br>
-                        <button  class="btn btn-default btn-primary">Crear Usuario</button>
-                    </div>
-                </div> 
-            </form>
-        </fieldset>
-    </section>
+    <fieldset class="scheduler-border">
+        <legend class="scheduler-border heading-hr text-primary"> Crear una cuenta nueva. </legend>
+        <form action="nU/newUser/newUserA" method="post">
+            <div class="row">
+                <div class="col-sm-12 col-md-4" >
+                    <label for="nombreUsuario" class="letrasNavEscritorioRed" placeholder="Nombre" >Nombre
+                    </label><br>
+                    <input type="text" class="form-control" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre">
+                </div>
+                <div class="col-sm-12 col-md-4" >
+                    <label for="apellidoUsuario" class="letrasNavEscritorioRed">Apellido
+                    </label><br>
+                    <input type="text" class="form-control" name="apellidoUsuario" id="apellidoUsuario" placeholder="Apellido" >
+                </div>
+                <div class="col-sm-12 col-md-4" >
+                    <label for="nombreUsuarioAka" class="letrasNavEscritorioRed">Nombre Usuario
+                    </label><br>
+                    <input type="text" class="form-control" name="nombreUsuarioAka" id="nombreUsuarioAka" placeholder="Nombre Usuario" >
+                </div>
+            </div> <br>
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <label class="letrasNavEscritorioRed" for="contrasena1">Contraseña</label>
+                    <input class="form-control" type="password" name="contrasena1" id="contrasena1" placeholder="Contraseña">
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <label class="letrasNavEscritorioRed" for="contrasena2">Confirma Contraseña</label>
+                    <input class="form-control" type="password" name="contrasena2" id="contrasena2" placeholder="Confirma Contraseña" >
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <label class="letrasNavEscritorioRed" for="paso1/2">Paso1/2</label> <br>
+                    <button  class="btn btn-default btn-primary">Crear Usuario</button>
+                </div>
+            </div> 
+        </form>
+    </fieldset>
+</section>
     
 <section>
     <fieldset class="scheduler-border">
-        <legend class="scheduler-border heading-hr text-primary"> Como hacer los pagos y cobrar ganancias</legend>
-        
-        <div class="col-md-12 col-sm-12 col-xs-12 ">
-        <h4 class="f-primary-b">Ve las instruciones</h4>
-          <div class="b-short-photo-items-group">
-    <div class="b-column">
-        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_1.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_1.jpg" alt=""/></a>
-    </div>
-    <div class="b-column">
-        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_2.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_2.jpg" alt=""/></a>
-    </div>
-    <div class="b-column">
-        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_3.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_3.jpg" alt=""/></a>
-    </div>
-    <div class="b-column">
-        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_4.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_4.jpg" alt=""/></a>
-    </div>
-    <div class="b-column">
-        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_5.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_5.jpg" alt=""/></a>
-    </div>
-    <div class="b-column">
-        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_6.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_6.jpg" alt=""/></a>
-    </div>
-    <div class="b-column">
-        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_7.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_7.jpg" alt=""/></a>
-    </div>
-    <div class="b-column">
-        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_8.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_8.jpg" alt=""/></a>
-    </div>
-    <div class="b-column hidden-xs">
-        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_9.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_9.jpg" alt=""/></a>
-    </div>
-    <div class="b-column hidden-sm hidden-xs">
-        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_10.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_10.jpg" alt=""/></a>
-    </div>
-    <div class="b-column hidden-sm hidden-xs">
-        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_11.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_11.jpg" alt=""/></a>
-    </div>
-    <div class="b-column hidden-sm hidden-xs">
-        <a class="b-short-photo-item fancybox" href="img/gallery/big/gallery_12.jpg" title="photo stream" rel="footer-group"><img width="99" height="99" data-retina src="<?php echo base_url('recursos/front1/'); ?>img/gallery/sm/gallery_12.jpg" alt=""/></a>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <legend class="scheduler-border heading-hr text-primary"> Como hacer depocitos en efectivo para apostar </legend>
+            <h5 class="f-primary-b">Ve las instruciones</h5>            
+            <div class="b-app-with-img row">
+                <div class="col-sm-4 col-xs-12 col-md-12">
+                    <div class="b-app-with-img__item">
+                        <div class="b-app-with-img__item_img view view-sixth">
+                            <a href="#"><img class="j-data-element" data-animate="fadeInDown" data-retina src="<?php echo base_url('recursos/img/'); ?>front1/f2.png" alt=""/></a>
+                            <div class="b-item-hover-action f-center mask">
+                                <div class="b-item-hover-action__inner">
+                                    <div class="b-item-hover-action__inner-btn_group">
+                                        <a href="<?php echo base_url('recursos/img/'); ?>front1/f2.png" class="b-btn f-btn b-btn-light f-btn-light info fancybox" title="Como hacer depocitos en efectivo para apostar"><i class="fa fa-arrows-alt"></i></a>
+                                        <!--<a href="portfolio_our_portfolio_detail.html" class="b-btn f-btn b-btn-light f-btn-light info"><i class="fa fa-link"></i></a>  rel="group2" este va en el a de arriba -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
     </fieldset>
 </section>
 
-
-
+    
+<section>
+    <fieldset class="scheduler-border">
+        <legend class="scheduler-border heading-hr text-primary">Como retirar las ganacias.</legend>
+            <h5 class="f-primary-b">Ve las instruciones</h5>            
+            <div class="b-app-with-img row">
+                <div class="col-sm-4 col-xs-12 col-md-12">
+                    <div class="b-app-with-img__item">
+                        <div class="b-app-with-img__item_img view view-sixth">
+                            <a href="#"><img class="j-data-element" data-animate="fadeInDown" data-retina src="<?php echo base_url('recursos/img/'); ?>front1/f2.png" alt=""/></a>
+                            <div class="b-item-hover-action f-center mask">
+                                <div class="b-item-hover-action__inner">
+                                    <div class="b-item-hover-action__inner-btn_group">
+                                        <a href="<?php echo base_url('recursos/img/'); ?>front1/f2.png" class="b-btn f-btn b-btn-light f-btn-light info fancybox" title="Como hacer depocitos en efectivo para apostar"><i class="fa fa-arrows-alt"></i></a>
+                                        <!--<a href="portfolio_our_portfolio_detail.html" class="b-btn f-btn b-btn-light f-btn-light info"><i class="fa fa-link"></i></a>  rel="group2" este va en el a de arriba -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+    </fieldset>
 </section>
 
   <section class="b-bg-video f-bg-video">
