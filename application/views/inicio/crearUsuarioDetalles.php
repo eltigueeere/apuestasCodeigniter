@@ -4,6 +4,7 @@
     $this->load->view('layout/general/navbarMovil'); 
 ?>
 <br>
+<?php print_r($usuarioF1);  ?>
 <div class="container center1">    
     <section>
         <fieldset class="scheduler-border">
