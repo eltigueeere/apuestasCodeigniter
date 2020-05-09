@@ -3,7 +3,8 @@
 class NewUser extends CI_Controller {
     
 	public function __construct(){
-		parent::__construct();
+        parent::__construct();
+        $this->load->model("nU/New_user_model");
 	}
 
     public function newUserA(){
@@ -17,13 +18,25 @@ class NewUser extends CI_Controller {
                 if(strlen($contraseña1) > 5 && strlen($contraseña1) < 11 ){
                     if(preg_match('/[a-z]/i',$contraseña1)){
                         if(preg_match('/[0-9]{1}/',$contraseña1)){
+                            $sifrado=sha1($contraseña1);
                             $usuarioF1 = array(
-                                "nombreUsuario" => $nombreUsuario,
-                                "apellidoUsuario" => $apellidoUsuario,
-                                "nombreUsuarioAka" => $nombreUsuarioAka,
-                                "contraseña" => $contraseña1
+                                $nombreUsuario,
+                                $apellidoUsuario,
+                                $nombreUsuarioAka,
+                                $sifrado
                             );
-                            $this->load->view('inicio/crearUsuarioDetalles', compact("usuarioF1"));
+                            $insertNewUser1Consulta = $this->New_user_model->insertNewUser1($usuarioF1);
+                            if($insertNewUser1Consulta[0]->count != 0){
+                                $mensaje = array(
+                                    'texto' => 'El nombre de usuario ya existe',
+                                    'tipo' => 'error'
+                                );               
+                                $this->session->set_flashdata('mensaje',$mensaje);
+                                redirect(base_url('home/crearUsuario'));
+                            } else{
+                                $this->New_user_model->insertNewUser1_2($usuarioF1);
+                                $this->load->view('inicio/crearUsuarioDetalles', compact("usuarioF1"));
+                            }
                         } else{
                             $mensaje = array(
                                 'texto' => 'La contraseña no contiene almenos un número',
@@ -58,6 +71,21 @@ class NewUser extends CI_Controller {
             }
         } else{
             redirect(base_url()); //no post            
+        }
+    }
+
+    public function newUserZ(){
+        if($this->input->post()){
+            $nombreUsuario = $_POST['nombreUsuario'];
+            $numeroTelefono = $_POST["numeroTelefono"];
+            $correo = $_POST["correo"];
+            $genero = $_POST["genero"];
+            $dia = $_POST["dia"];
+            $mes = $_POST["mes"];
+            $year = $_POST["year"];
+            echo $nombreUsuario, $numeroTelefono, $correo, $genero, $dia, $mes, $year;
+        }else{
+            echo "nada";
         }
     }
 }

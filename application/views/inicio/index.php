@@ -160,7 +160,14 @@
 <section>
     <fieldset class="scheduler-border">
         <legend class="scheduler-border heading-hr text-primary"> Crear una cuenta nueva. </legend>
-        <form action="nU/newUser/newUserA" method="post">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="wrap-input100 m-b-10 letrasNavEscritorioRed">
+						<?php echo muestra_mensaje_flash($this->session->flashdata('mensaje'));?>
+					</div>
+                </div>
+            </div>
+        <form action="<?php echo base_url('nU/newUser/newUserA'); ?>" method="post"> 
             <div class="row">
                 <div class="col-sm-12 col-md-4" >
                     <label for="nombreUsuario" class="letrasNavEscritorioRed" placeholder="Nombre" >Nombre
@@ -190,13 +197,6 @@
                 <div class="col-sm-12 col-md-4">
                     <label class="letrasNavEscritorioRed" for="paso1/2">Paso1/2</label> <br>
                     <button  class="btn btn-default btn-primary">Crear Usuario</button>
-                </div>
-            </div> 
-            <div class="row">
-                <div class="col-sm-12 col-md-4">
-                    <div class="wrap-input100 m-b-10 letrasNavEscritorioRed">
-						<?php echo muestra_mensaje_flash($this->session->flashdata('mensaje'));?>
-					</div>
                 </div>
             </div>
         </form>
