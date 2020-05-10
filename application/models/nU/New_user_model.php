@@ -16,4 +16,11 @@ class New_user_model extends CI_Model {
 		$regla = "INSERT INTO tbusuario (nombre, paterno, username, password) VALUES ('$usuarioF1[0]', '$usuarioF1[1]','$usuarioF1[2]','$usuarioF1[3]')";
 		return $this->db->query($regla);
 	}
+
+	public function insertNewUser1_3($usuarioF2){
+		$regla = "UPDATE tbusuario SET 
+		telefono =  '$usuarioF2[1]', email =  '$usuarioF2[2]', genero =  '$usuarioF2[3]', dia =  '$usuarioF2[4]',
+		mes = '$usuarioF2[5]', year = '$usuarioF2[6]' WHERE username = '$usuarioF2[0]'";
+		return $this->db->query($regla);
+	}
 }

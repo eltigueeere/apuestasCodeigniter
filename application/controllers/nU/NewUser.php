@@ -74,7 +74,7 @@ class NewUser extends CI_Controller {
         }
     }
 
-    public function newUserZ(){
+    public function newUserB(){
         if($this->input->post()){
             $nombreUsuario = $_POST['nombreUsuario'];
             $numeroTelefono = $_POST["numeroTelefono"];
@@ -83,7 +83,22 @@ class NewUser extends CI_Controller {
             $dia = $_POST["dia"];
             $mes = $_POST["mes"];
             $year = $_POST["year"];
-            echo $nombreUsuario, $numeroTelefono, $correo, $genero, $dia, $mes, $year;
+            $usuarioF2 = array(
+                $nombreUsuario,
+                $numeroTelefono,
+                $correo,
+                $genero,
+                $dia,
+                $mes,
+                $year
+            );
+            $this->New_user_model->insertNewUser1_3($usuarioF2);
+			$mensaje = array(
+				'texto' => 'Ingresa con tu nombre de usuario y contraseña',
+				'tipo' => 'info'
+			);
+			$this->session->set_flashdata('mensaje',$mensaje);
+            redirect(base_url('Auth/inicio'));
         }else{
             echo "nada";
         }
