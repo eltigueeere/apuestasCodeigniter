@@ -3,7 +3,7 @@
  * ----------
  */
 .skin-ssp .main-header .navbar {
-  background-color: #780516;
+  background-color: red;
 }
 .skin-ssp .main-header .navbar .nav > li > a {
   color: #ffffff;
@@ -59,7 +59,7 @@
 .skin-ssp .wrapper,
 .skin-ssp .main-sidebar,
 .skin-ssp .left-side {
-  background-color: #780516;
+  background-color: red;
 }
 .skin-ssp .user-panel > .info,
 .skin-ssp .user-panel > .info > a {
@@ -86,7 +86,7 @@
   background: #191919;
 }
 .skin-ssp .sidebar a {
-  color: #b8c7ce;
+  color: black;
 }
 .skin-ssp .sidebar a:hover {
   text-decoration: none;

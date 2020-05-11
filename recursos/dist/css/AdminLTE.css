@@ -809,7 +809,7 @@ a:focus {
   margin: 0;
 }
 .control-sidebar-dark {
-  color: #b8c7ce;
+  color: black;
 }
 .control-sidebar-dark,
 .control-sidebar-dark + .control-sidebar-bg {
@@ -820,7 +820,7 @@ a:focus {
 }
 .control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a {
   background: #181f23;
-  color: #b8c7ce;
+  color: black;
 }
 .control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a,
 .control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a:hover,
@@ -851,22 +851,22 @@ a:focus {
   background: #1e282c;
 }
 .control-sidebar-dark .control-sidebar-menu > li > a .menu-info > p {
-  color: #b8c7ce;
+  color: black;
 }
 /*-----------------------------CLASE SSP---------------------------------*/
 .control-sidebar-ssp {
-  color: #b8c7ce;
+  color: black;
 }
 .control-sidebar-ssp,
 .control-sidebar-ssp + .control-sidebar-bg {
-  background: #780516;
+  background: red;
 }
 .control-sidebar-ssp .nav-tabs.control-sidebar-tabs {
   border-bottom: #001F3F;
 }
 .control-sidebar-ssp .nav-tabs.control-sidebar-tabs > li > a {
   background: #852723;
-  color: #b8c7ce;
+  color: black;
 }
 .control-sidebar-ssp .nav-tabs.control-sidebar-tabs > li > a,
 .control-sidebar-ssp .nav-tabs.control-sidebar-tabs > li > a:hover,
@@ -897,7 +897,7 @@ a:focus {
   background: #3F3F3F;
 }
 .control-sidebar-ssp .control-sidebar-menu > li > a .menu-info > p {
-  color: #b8c7ce;
+  color: black;
 }
 /*-----------------------------CLASE SSP---------------------------------*/
 .control-sidebar-light {

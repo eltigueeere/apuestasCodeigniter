@@ -70,7 +70,7 @@
 
 
 					<div class="text-center w-full">
-						<a class="txt1" href="#">
+						<a class="txt1" href="#"> <br>
 							© CDMX Tel: (55) XXXX--XXXX
 									
 						</a>

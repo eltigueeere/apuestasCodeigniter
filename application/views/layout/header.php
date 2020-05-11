@@ -31,7 +31,7 @@ desired effect
 			<!-- mini logo for sidebar mini 50x50 pixels -->
 			<span class="logo-mini"><b>GAA</b></span>
 			<!-- logo for regular state and mobile devices -->
-			<span class="logo-lg"><b>© Hidalgo</b></span>
+			<span class="logo-lg"><b>©Face 2 Face</b></span>
 		</a>
 
 		<!-- Header Navbar -->
@@ -66,7 +66,7 @@ desired effect
 								</p>
 							</li>
 							<!-- Menu Footer-->
-							<li class="user-footer" style="background: #780516">
+							<li class="user-footer" style="background: red">
 								<!-- <div class="pull-left">
 									<a href="#" class="btn btn-default btn-flat">Perfil</a>
 								</div> -->
